@@ -17,8 +17,21 @@ namespace Bakery.Models.Tests
     [TestMethod]
     public void GetBreadAmount_ReturnsAString_String()
     {
-      Bread testBread = new Bread ("3");
+      Bread testBread = new Bread("3");
       Assert.AreEqual(typeof(String), testBread.Amount.GetType());
+    }
+    [TestMethod]
+    public void GetBreadAmount_ReturnsAString_Returns3()
+    {
+      Bread testBread = new Bread("3");
+      Assert.AreEqual("3", testBread.Amount);
+    }
+    [TestMethod]
+    public void GetBreadAmount_ReturnsPriceForAmount_int()
+    {
+      Assert.AreEqual(Bread.GetBreadPrice("3"), 10);
+      Assert.AreEqual(Bread.GetBreadPrice("7"), 25);
+      Assert.AreEqual(Bread.GetBreadPrice("12"), 40);
     }
 
   }
