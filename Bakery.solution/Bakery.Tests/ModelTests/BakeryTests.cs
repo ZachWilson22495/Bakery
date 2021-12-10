@@ -14,6 +14,12 @@ namespace Bakery.Models.Tests
       Bread testBread = new Bread("3");
       Assert.AreEqual(typeof(Bread), testBread.GetType());
     }
+    [TestMethod]
+    public void GetBreadAmount_ReturnsAString_String()
+    {
+      Bread testBread = new Bread ("3");
+      Assert.AreEqual(typeof(String), testBread.Amount.GetType());
+    }
 
   }
 }
