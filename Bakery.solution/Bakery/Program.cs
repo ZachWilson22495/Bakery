@@ -7,7 +7,7 @@ namespace UI
   {
     static void Main ()
     {
-      
+      Console.WriteLine("")
     }
   }
 }

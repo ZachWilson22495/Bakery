@@ -21,4 +21,23 @@ namespace Bakery.Models
       return BreadDictionary[number.ToLower()];
     }
   } 
+
+  public class Pastry
+  {
+    public string Amount { get; }
+    private static Dictionary<string, int> PastryDictionary = new Dictionary<string, int>()
+    {
+      {"1", 2}, {"one", 2}, {"3", 5}, {"three", 5}, {"4", 7}, {"four", 7}, {"5", 9}, {"five", 9}, {"6", 10}, {"six", 10}
+    };
+
+    public Pastry(string amount)
+    {
+      Amount = amount;
+    }
+
+    public static int GetPastryPrice(string number)
+    {
+      return PastryDictionary[number.ToLower()];
+    }
+  } 
 }

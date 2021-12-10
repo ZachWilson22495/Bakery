@@ -30,8 +30,37 @@ namespace Bakery.Models.Tests
     public void GetBreadAmount_ReturnsPriceForAmount_int()
     {
       Assert.AreEqual(Bread.GetBreadPrice("3"), 10);
-      Assert.AreEqual(Bread.GetBreadPrice("7"), 25);
+      Assert.AreEqual(Bread.GetBreadPrice("sEven"), 25);
       Assert.AreEqual(Bread.GetBreadPrice("12"), 40);
+    }
+  }
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
+    {
+      Pastry testPastry = new Pastry("3");
+      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+    }
+    [TestMethod]
+    public void GetPastryAmount_ReturnsAString_String()
+    {
+      Pastry testPastry = new Pastry("3");
+      Assert.AreEqual(typeof(String), testPastry.Amount.GetType());
+    }
+    [TestMethod]
+    public void GetPastryAmount_ReturnsAString_Returns3()
+    {
+      Pastry testPastry = new Pastry("3");
+      Assert.AreEqual("3", testPastry.Amount);
+    }
+    [TestMethod]
+    public void GetPastryAmount_ReturnsPriceForAmount_int()
+    {
+      Assert.AreEqual(Pastry.GetPastryPrice("1"), 2);
+      Assert.AreEqual(Pastry.GetPastryPrice("thrEe"), 5);
+      Assert.AreEqual(Pastry.GetPastryPrice("6"), 10);
     }
 
   }
