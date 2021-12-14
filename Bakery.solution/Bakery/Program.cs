@@ -68,7 +68,7 @@ namespace UI
       }
       else 
       {
-        Console.WriteLine("What was that? I don't think I sell those. Can you say it again? Pierre's ears aren't what they used to be.");
+        Console.WriteLine("What was that? I don't think I sell those. Could you say that again? Pierre's ears aren't what they used to be.");
       }
     }
   }
