@@ -11,27 +11,30 @@ namespace Bakery.Models.Tests
     [TestMethod]
     public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      Bread testBread = new Bread("3");
-      Assert.AreEqual(typeof(Bread), testBread.GetType());
+      string testBread = "3";
+      Bread newBreadOrder = new Bread(testBread);
+      Assert.AreEqual(typeof(Bread), newBreadOrder.GetType());
     }
     [TestMethod]
     public void GetBreadAmount_ReturnsAString_String()
     {
-      Bread testBread = new Bread("3");
-      Assert.AreEqual(typeof(String), testBread.Amount.GetType());
+      string testBread = "3";
+      Bread newBreadOrder = new Bread(testBread);
+      Assert.AreEqual(typeof(String), newBreadOrder.Amount.GetType());
     }
     [TestMethod]
     public void GetBreadAmount_ReturnsAString_Returns3()
     {
-      Bread testBread = new Bread("3");
-      Assert.AreEqual("3", testBread.Amount);
+      string testBread = "3";
+      Bread newBreadOrder = new Bread(testBread);
+      Assert.AreEqual("3", newBreadOrder.Amount);
     }
     [TestMethod]
     public void GetBreadAmount_ReturnsPriceForAmount_int()
     {
-      Assert.AreEqual(Bread.GetBreadPrice("3"), 10);
-      Assert.AreEqual(Bread.GetBreadPrice("sEven"), 25);
-      Assert.AreEqual(Bread.GetBreadPrice("12"), 40);
+      string testBread = "3";
+      Bread newBreadOrder = new Bread(testBread);
+      Assert.AreEqual(newBreadOrder.GetBreadPrice("3"), 10);
     }
   }
   [TestClass]
@@ -40,27 +43,30 @@ namespace Bakery.Models.Tests
     [TestMethod]
     public void PastryConstructor_CreatesInstanceOfPastry_Pastry()
     {
-      Pastry testPastry = new Pastry("3");
-      Assert.AreEqual(typeof(Pastry), testPastry.GetType());
+      string testPastry = "3";
+      Pastry newPastryOrder = new Pastry(testPastry);
+      Assert.AreEqual(typeof(Pastry), newPastryOrder.GetType());
     }
     [TestMethod]
     public void GetPastryAmount_ReturnsAString_String()
     {
-      Pastry testPastry = new Pastry("3");
-      Assert.AreEqual(typeof(String), testPastry.Amount.GetType());
+      string testPastry = "3";
+      Pastry newPastryOrder = new Pastry(testPastry);
+      Assert.AreEqual(typeof(String), newPastryOrder.Amount.GetType());
     }
     [TestMethod]
     public void GetPastryAmount_ReturnsAString_Returns3()
     {
-      Pastry testPastry = new Pastry("3");
-      Assert.AreEqual("3", testPastry.Amount);
+      string testPastry = "3";
+      Pastry newPastryOrder = new Pastry(testPastry);
+      Assert.AreEqual("3", newPastryOrder.Amount);
     }
     [TestMethod]
     public void GetPastryAmount_ReturnsPriceForAmount_int()
     {
-      Assert.AreEqual(Pastry.GetPastryPrice("1"), 2);
-      Assert.AreEqual(Pastry.GetPastryPrice("thrEe"), 5);
-      Assert.AreEqual(Pastry.GetPastryPrice("6"), 10);
+      string testPastry = "3";
+      Pastry newPastryOrder = new Pastry(testPastry);
+      Assert.AreEqual(newPastryOrder.GetPastryPrice("3"), 5);
     }
 
   }
