@@ -11,7 +11,7 @@
 
 ## Description
 
-__
+_At Pierre's Bakery, there are two things for sale. Bread, and Pastries. Enjoy my interactive prompt where Pierre will ask you what you would like to buy, clarifies prices and deals, and then calculates your total for you_
 
 ## Setup/Installation Requirements
 
