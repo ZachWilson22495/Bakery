@@ -68,6 +68,5 @@ namespace Bakery.Models.Tests
       Pastry newPastryOrder = new Pastry(testPastry);
       Assert.AreEqual(newPastryOrder.GetPastryPrice("3"), 5);
     }
-
   }
 }

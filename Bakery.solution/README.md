@@ -11,13 +11,15 @@
 
 ## Description
 
-_At Pierre's Bakery, there are two things for sale. Bread, and Pastries. Enjoy my interactive prompt where Pierre will ask you what you would like to buy, clarifies prices and deals, and then calculates your total for you_
+__
 
 ## Setup/Installation Requirements
 
 * Clone this repository to your Desktop
-* Use your terminal to navigate to the new folder titled 'bakery/Bakery'
-* input 'dotnet run' into your terminal
+* Open 'bakery' in your code editor
+* Use your terminal to navigate to 'bakery/Bakery' and run 'dotnet restore' in your terminal to install bin & obj folders.
+* Use your terminal to navigate to 'bakery/Bakery.Tests' and run 'dotnet test' in your terminal to see if all tests passed.
+* Use your terminal to navigate back to 'bakery/Bakery' and run 'dotnet run' to activate application.
 * Answer the questions provided to you by the application 
 
 ## Known Bugs
